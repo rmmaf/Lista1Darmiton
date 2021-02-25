@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1614241978527.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "4155448316",
+    "id" : "A2D0BDEA",
+    "lastKnownWriteTime" : 1614284466,
+    "last_content_update" : 1614284466624,
+    "path" : "~/FinsAcadêmicos/Darmiton/Lista1Darmiton/knn2.R",
+    "project_path" : "knn2.R",
+    "properties" : {
+        "cursorPosition" : "36,0",
+        "scrollLine" : "0",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

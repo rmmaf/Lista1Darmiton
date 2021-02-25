@@ -1,0 +1,27 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1614284438668.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "55A3C4C5",
+    "lastKnownWriteTime" : 1614287880,
+    "last_content_update" : 1614287880634,
+    "path" : "~/FinsAcadêmicos/Darmiton/Lista1Darmiton/relatorio.Rmd",
+    "project_path" : "relatorio.Rmd",
+    "properties" : {
+        "cursorPosition" : "36,32",
+        "last_setup_crc32" : "174C5EC2f3ba58c7",
+        "scrollLine" : "17",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 4,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}
