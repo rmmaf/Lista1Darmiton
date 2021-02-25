@@ -1,0 +1,56 @@
+library(foreign)
+library(caTools)
+# calculates the mode of the vector
+get_mode <- function(v) {
+  # make frequencies table and sort it
+  z<-sort(table(v), decreasing=T)[1]
+  # get the value with the hights frequency
+  mode<-names(which.max(z))[1]
+  return(mode)
+}
+
+
+
+get_k_nearest <- function(query, examples, k, target_column_index) {
+  X<-examples[,-target_column_index]
+  y<-examples[,target_column_index]
+  #calculate distances between the query and each example in the examples
+  dists<-apply(X, 1, function(x) sqrt(sum((x-query)^2)))
+  # sort the distances and get the indices of this sorting
+  sorted_dists<-sort(dists, index.return = T)$ix
+  # choose indices of k nearest
+  k_nearest<-sorted_dists[1:k]
+  candidates<-y[k_nearest]
+  # get the most frequent answer
+  result<-get_mode(candidates)
+  return(result)
+}
+
+run_experiment <- function(dataset, target_column_index, k, train_ratio, knnf, n_times=1) {
+  accuracy = 0
+  for (i in 1:n_times) {
+    # split the dataset
+    target_column = dataset[,target_column_index]
+    split = sample.split(target_column, SplitRatio = train_ratio)
+    View(split)
+    train = subset(dataset, split==T)
+    trainX = train[,-target_column_index]
+    trainy = train[,target_column_index]
+    test = subset(dataset, split==F)
+    testX = test[,-target_column_index]
+    testy = test[,target_column_index]
+    predictions = apply(testX, 1, function(x) knnf(x, train, k, ncol(train)))
+    dif = predictions == testy
+    accuracy = accuracy + sum(dif)/length(predictions)
+  }
+  accuracy = accuracy/n_times
+  accuracy
+}
+
+df <- read.arff("arquivos/deffects2.arff")
+
+run_experiment(df, 22, 1, 0.7, get_k_nearest, 1)
+run_experiment(df, 22, 2, 0.7, get_k_nearest, 1)
+run_experiment(df, 22, 3, 0.7, get_k_nearest, 1)
+run_experiment(df, 22, 5, 0.7, get_k_nearest, 1)
+run_experiment(df, 22, 7, 0.7, get_k_nearest, 1)
