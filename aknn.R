@@ -56,7 +56,7 @@ adaptiveRule <- function(train, colClass){
 adaptiveKnnAccuracy <- function(k, test, train, classCol){
   raios <- adaptiveRule(train, classCol)
   predictions <- apply(test[,-classCol], 1, function(x) adaptivek_proximos(x, train, k, classCol, raios))
-  testy <- test[,22]
+  testy <- test[,classCol]
   dif <- predictions == testy
   return(sum(dif)/length(predictions))
 }

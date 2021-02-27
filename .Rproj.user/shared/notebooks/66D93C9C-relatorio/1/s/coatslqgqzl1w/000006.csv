@@ -1,8 +1,0 @@
-"0","df <- read.arff(""arquivos/deffects2.arff"")"
-"0","df[,22] <- gsub(""false"", FALSE, df[,22])"
-"0","df[,22] <- gsub(""true"", TRUE, df[,22])"
-"0","df[,22] <- as.logical(df[,22])"
-"0","train <- divideInstances(df, 0.75)[[1]]"
-"0","test <- divideInstances(df, 0.75)[[2]]"
-"0",""
-"0","kable(head(df[,1:10]))"

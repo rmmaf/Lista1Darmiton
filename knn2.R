@@ -38,7 +38,7 @@ k_proximos <- function(instance, examples, k, classCol){
 
 calculateKnnAccuracy <- function(k, test, train, classCol){
   predictions <- apply(test[,-classCol], 1, function(x) k_proximos(x, train, k, classCol))
-  testy <- test[,22]
+  testy <- test[,classCol]
   dif <- predictions == testy
   return(sum(dif)/length(predictions))
 }
