@@ -1,0 +1,2 @@
+"0","df <- read.arff(""arquivos/datatrieve.arff"")"
+"0","kable(head(df))"

@@ -1,25 +1,25 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1614252474932.000,
+    "created" : 1614532468644.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
-    "id" : "534D6FED",
-    "lastKnownWriteTime" : 1614386366,
-    "last_content_update" : 1614386366336,
+    "id" : "52DCBA6F",
+    "lastKnownWriteTime" : 1614534666,
+    "last_content_update" : 1614534666729,
     "path" : "~/FinsAcadêmicos/Darmiton/Lista1Darmiton/wknn.R",
     "project_path" : "wknn.R",
     "properties" : {
-        "cursorPosition" : "55,25",
+        "cursorPosition" : "28,20",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },
     "read_only" : false,
     "read_only_alternatives" : [
     ],
-    "relative_order" : 7,
+    "relative_order" : 4,
     "source_on_save" : false,
     "source_window" : "",
     "type" : "r_source"

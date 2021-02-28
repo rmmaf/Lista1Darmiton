@@ -1,18 +1,18 @@
 {
     "collab_server" : "",
     "contents" : "",
-    "created" : 1614274491709.000,
+    "created" : 1614241978527.000,
     "dirty" : false,
     "encoding" : "UTF-8",
     "folds" : "",
     "hash" : "0",
-    "id" : "265B1180",
-    "lastKnownWriteTime" : 1614386325,
-    "last_content_update" : 1614386325621,
-    "path" : "~/FinsAcadêmicos/Darmiton/Lista1Darmiton/aknn.R",
-    "project_path" : "aknn.R",
+    "id" : "A2D0BDEA",
+    "lastKnownWriteTime" : 1614534662,
+    "last_content_update" : 1614534662576,
+    "path" : "~/FinsAcadêmicos/Darmiton/Lista1Darmiton/knn2.R",
+    "project_path" : "knn2.R",
     "properties" : {
-        "cursorPosition" : "58,25",
+        "cursorPosition" : "10,35",
         "scrollLine" : "0",
         "tempName" : "Untitled1"
     },
@@ -20,7 +20,7 @@
     "read_only_alternatives" : [
     ],
     "relative_order" : 3,
-    "source_on_save" : false,
+    "source_on_save" : true,
     "source_window" : "",
     "type" : "r_source"
 }
