@@ -1,22 +1,10 @@
 library(foreign)
-library(caTools)
 
 moda <- function(v) {
   uniqv <- unique(v)
   return(uniqv[which.max(tabulate(match(v, uniqv)))])
 }
 
-
-divideInstances <- function(df, fraction){
-  smp_size <- floor(fraction * nrow(df))
-  
-  set.seed(123)
-  train_ind <- sample(seq_len(nrow(df)), size = smp_size)
-  
-  train <- df[train_ind, ]
-  test <- df[-train_ind, ]
-  return(list(train, test))
-}
 
 k_proximos <- function(instance, examples, k, classCol){
   x <- examples[,-classCol]

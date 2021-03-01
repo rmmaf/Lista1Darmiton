@@ -1,0 +1,2 @@
+"0","ggplot(dfplot, aes(x=K, y=Acuracia, colour=""K"",  group=1)) +"
+"0","  geom_line() + ggtitle(""K-NN"") + scale_x_continuous(""K"", breaks = kValue)"

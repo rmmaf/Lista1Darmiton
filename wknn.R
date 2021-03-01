@@ -1,5 +1,5 @@
 library(foreign)
-library(caTools)
+
 
 moda <- function(v) {
   uniqv <- unique(v)
@@ -12,17 +12,6 @@ get_weighted <- function(labels,weights) {
   scores = aggregate(. ~ labels, dset, sum)
   result = as.character(scores$labels[which.max(scores$weights)])
   return(result)
-}
-
-divideInstances <- function(df, fraction){
-  smp_size <- floor(fraction * nrow(df))
-  
-  set.seed(123)
-  train_ind <- sample(seq_len(nrow(df)), size = smp_size)
-  
-  train <- df[train_ind, ]
-  test <- df[-train_ind, ]
-  return(list(train, test))
 }
 
 pesosk_proximos <- function(instance, examples, k, classCol){
